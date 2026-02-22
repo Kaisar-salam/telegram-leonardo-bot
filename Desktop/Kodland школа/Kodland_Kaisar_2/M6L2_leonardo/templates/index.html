@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI Generator</title>
+</head>
+<body>
+
+<h1>Генератор картинок</h1>
+
+<form method="POST">
+    <input type="text" name="prompt" placeholder="Введите описание" required>
+    <button type="submit">Создать</button>
+</form>
+
+{% if image_url %}
+    <h2>Результат:</h2>
+    <img src="{{ image_url }}" width="512">
+{% endif %}
+
+</body>
+</html>
